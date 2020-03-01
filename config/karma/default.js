@@ -85,7 +85,7 @@ module.exports = function( config ) {
 		rollupPreprocessor: {
 			plugins: [
 				require( 'rollup-plugin-istanbul' )( {
-					exclude: [ 'tests/**/*.js' ]
+					exclude: [ 'tests/**/*.js' ],
 				} ),
 				require( 'rollup-plugin-mockr' )( require( '../mockr/default' ) ),
 				require( 'rollup-plugin-commonjs' )(),

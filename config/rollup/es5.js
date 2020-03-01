@@ -12,12 +12,13 @@ config.plugins[ 2 ] = babel( {
 	plugins: [ 'external-helpers' ]
 } );
 
+/*
 config.plugins.push( uglify( {
 	output: {
 		preamble: config.banner
 	}
 } ) );
-
+*/
 config.dest = `dist/${packageInfo.name}.es5.js`;
 
 export default config;
